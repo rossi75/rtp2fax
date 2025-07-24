@@ -27,10 +27,10 @@ Das Skript benötigt folgende Programme, die installiert sein müssen:
 | Programm  | Paketname (Debian/Raspbian) | Zweck                               |
 |-----------|-----------------------------|-------------------------------------|
 | `tshark`  | `tshark`                    | RTP-Stream Analyse                  |
+| `xxd`     | `vim-common`                | Hexdump in Binärdatei umwandeln     |
 | `sox`     | `sox`                       | Audio-Konvertierung                 |
 | `rxfax`   | `spandsp-utils`             | Fax-Dekodierung                     |
 | `convert` | `imagemagick`               | TIFF → PNG Konvertierung [optional] |
-| `xxd`     | `vim-common`                | Hexdump in Binärdatei umwandeln     |
 
 ---
 
