@@ -9,10 +9,10 @@ Dieses Bash-Skript extrahiert aus einem `.pcap`-File mit einem G.711 kodierten F
 1. **Analyse des PCAP-Files:**  
    Das Skript erkennt UDP-Streams im `.pcap` und überprüft, ob genau ein oder zwei mögliche RTP-Streams vorhanden sind. Bei mehr als zwei Streams bricht es ab, um Fehlinterpretationen zu vermeiden. Bei zwei Streams (Hin- und Rückrichtung) wird der Stream mit den meisten Paketen verwendet. Der Stream mit weniger Paketen ist dann "nur" die Seite die das Fax empfängt und die Bestätigungen verschickt
 
-2. **Codec-Erkennung:**
+2. **Codec-Erkennung:**  
    Automatische Erkennung, ob der G.711-Stream µ-law (Payload Type 0) oder A-law (Payload Type 8) ist
 
-3. **Extraktion & Konvertierung:**
+3. **Extraktion & Konvertierung:**  
    - RTP-G.711 Payload wird extrahiert und in eine rohe Audiodatei geschrieben
    - Diese wird mit `sox` in eine WAV-Datei umgewandelt
    - `rxfax` dekodiert aus der WAV-Datei das Fax in eine TIFF-Datei
